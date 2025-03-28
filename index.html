@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoFolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="manifest" href="/manifest.json">
+
+
+    <style>
+        body {
+            background-color: #090909;
+            color: #ffffff;
+        }
+
+        .contact-header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .contact-header h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+
+        .contact-details .contact-item {
+            text-align: center;
+        }
+
+        .contact-details .contact-item h4 {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .form-control {
+            background-color: #222;
+            color: #ffffff;
+            border: none;
+        }
+
+        .form-control::placeholder {
+            color: #a7a21d;
+        }
+
+        .btn-submit {
+            background-color:  #a7a21d;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        
+            .contact-details {
+                color: black; /* Set text color to black */
+            }
+        
+            .contact-item h4 {
+                color: black; /* Set the heading color to black */
+            }
+        
+            .contact-item p {
+                color: black; /* Set paragraph color to black */
+            }
+        
+            .contact-item span {
+                color: black; /* Set icon color to black */
+            }  
+        
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#"> 
+            <i class="bi bi-camera" style="font-size: 24px; margin-right: 8px;"></i> 
+            My PhotoFolio
+        </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactModal" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container text-center">
+            <h1>I'm <span style="color: #a7a21d;">Sonam Chhabaidiya</span></h1>
+            <p>A Professional Photographer from Mumbai</p>
+            <p>With years of experience in professional photography, I specialize in delivering high-quality images that reflect the essence of my clients' visions. Whether it's a wedding, corporate event, or personal photoshoot, I am committed to providing exceptional service and creating visually stunning results. Please don't hesitate to contact me for consultations, collaborations, or bookings. I look forward to capturing your special moments!"</p>
+            <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#contactModal">AVAILABLE FOR HIRE</button>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">My Work</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio-item">
+                        <img src="https://bootstrapmade.com/content/demo/PhotoFolio/assets/img/gallery/gallery-1.jpg" alt="Portfolio 1" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio-item">
+                        <img src="https://bootstrapmade.com/content/demo/PhotoFolio/assets/img/gallery/gallery-2.jpg" alt="Portfolio 2" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio-item">
+                        <img src="https://bootstrapmade.com/content/demo/PhotoFolio/assets/img/gallery/gallery-8-2.jpg" alt="Portfolio 3" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio-item">
+                        <img src="https://bootstrapmade.com/content/demo/PhotoFolio/assets/img/gallery/gallery-6.jpg" alt="Portfolio 4" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio-item">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.U1MdjaXPL00AT-yoS2wuhAHaEo&pid=Api&P=0&h=180" alt="Portfolio 5" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="portfolio-item">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.AuLRqhLa1h-sPLg0r_DzAgHaE8&pid=Api&P=0&h=180" alt="Portfolio 6" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contact Header -->
+                    <section class="contact-header">
+                        <h1>Contact</h1>
+                        <p><p>I appreciate your interest in my work. If you have any questions or would like to discuss potential collaborations, please feel free to contact me. I look forward to connecting with you and exploring opportunities together.</p>
+                    </p>
+                    </section>
+
+                    <!-- Contact Details -->
+                    <section class="contact-details">
+                        <div class="contact-item">
+                            <span class="bi bi-geo-alt-fill" style="font-size: 48px;"></span>
+                            <h4>Location</h4>
+                            <p>sg barve marg,Mumbai,400024</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="bi bi-telephone-fill" style="font-size: 48px;"></span>
+                            <h4>Call</h4>
+                            <p>+91 8787654324</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="bi bi-envelope-fill" style="font-size: 48px;"></span>
+                            <h4>Email</h4>
+                            <p>sonam04@gmail.com</p>
+                        </div>
+                    </section>
+
+                    <!-- Contact Form -->
+                    <section>
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn-submit">Send Message</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="custom-footer text-white text-center py-3">
+    <p>&copy; 2024 PhotoFolio. All Rights Reserved.</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/yourusername" target="_blank" class="text-white me-3">
+            <i class="bi bi-instagram" style="font-size: 24px;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="text-white me-3">
+            <i class="bi bi-linkedin" style="font-size: 24px;"></i>
+        </a>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/service-worker.js")
+                .then(() => console.log("Service Worker Registered"));
+        }
+    </script>
+    
+</body>
+
+</html>

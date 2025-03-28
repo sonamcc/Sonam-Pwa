@@ -1,0 +1,82 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('https://wallpapercave.com/wp/wp5896422.jpg') center/cover no-repeat;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 10px 0 20px;
+}
+
+.btn-custom {
+    background-color: #a7a21d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+    background-color: #a7a21d;
+}
+
+.portfolio-item {
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.modal-header {
+    background-color: #a7a21d;
+    color: #fff;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+}
+
+.custom-footer {
+    background-color: #a7a21d; /* Change this to your desired color */
+}
+
+.contact-header {
+    color: black; /* Set text color to black */
+}
+
+.custom-navbar {
+    background-color:  #a7a21d; /* Replace with your desired color */
+}
+
+.navbar-nav .nav-link {
+    color: white; /* Set text color to white */
+    font-weight: bold; /* Make text bold */
+}
+
+    
+
